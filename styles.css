@@ -82,6 +82,7 @@ h3 {
   font-size: 1.2rem;
 }
 p, li, .lead { color: var(--muted); line-height: 1.75; }
+li + li { margin-top: 8px; }
 .lead {
   font-size: 1.12rem;
   max-width: 62ch;
@@ -136,6 +137,21 @@ p, li, .lead { color: var(--muted); line-height: 1.75; }
 .grid { display: grid; gap: 20px; }
 .cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.plain-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.facts {
+  margin-top: 18px;
+}
+.columns {
+  columns: 2;
+  column-gap: 32px;
+}
+.columns li,
+.training-list li {
+  break-inside: avoid;
+}
 .project.warm {
   background: linear-gradient(180deg, rgba(255,250,245,0.98), rgba(245,214,194,0.35));
 }
@@ -149,10 +165,35 @@ p, li, .lead { color: var(--muted); line-height: 1.75; }
 .spotlight {
   background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(245,214,194,0.5));
 }
+.mail-link {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+.legal-panel {
+  padding-bottom: 34px;
+}
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+.legal-grid section {
+  min-height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.62);
+  border: 1px solid var(--line);
+}
+.training-list {
+  columns: 2;
+  column-gap: 32px;
+}
 .small { font-size: 0.98rem; }
 .vision { padding-bottom: 72px; }
 @media (max-width: 900px) {
-  .hero, .two-col, .cards-3, .cards-2 { grid-template-columns: 1fr; }
+  .hero, .two-col, .cards-3, .cards-2, .legal-grid { grid-template-columns: 1fr; }
+  .columns, .training-list { columns: 1; }
   h1 { max-width: none; }
   .site-header { position: static; }
 }
