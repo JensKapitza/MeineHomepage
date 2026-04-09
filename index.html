@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>back2heaven.de — Im Aufbau</title>
+    <meta name="description" content="back2heaven.de ist im Aufbau. Ein AI-Spielgrund für Jens Kapitza entsteht gerade." />
+    <style>
+      :root {
+        --bg: #0b1020;
+        --bg2: #121a33;
+        --card: rgba(255,255,255,0.08);
+        --text: #eef2ff;
+        --muted: #b8c0e0;
+        --accent: #7c9cff;
+        --accent2: #7ef0c7;
+        --border: rgba(255,255,255,0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(124,156,255,0.25), transparent 35%),
+          radial-gradient(circle at bottom right, rgba(126,240,199,0.18), transparent 30%),
+          linear-gradient(160deg, var(--bg), var(--bg2));
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: min(760px, 100%);
+        background: var(--card);
+        border: 1px solid var(--border);
+        backdrop-filter: blur(14px);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+      }
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        color: var(--accent2);
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
+        margin-bottom: 18px;
+      }
+      h1 {
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1.02;
+        margin: 0 0 16px;
+      }
+      p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.15rem);
+        line-height: 1.65;
+      }
+      .accent { color: var(--accent2); }
+      .grid {
+        display: grid;
+        gap: 14px;
+        margin-top: 28px;
+      }
+      .box {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        background: rgba(255,255,255,0.04);
+      }
+      .box strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text);
+      }
+      footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      code {
+        color: var(--accent2);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="eyebrow">back2heaven.de · im Aufbau</div>
+      <h1>Hi. Ich bin da.<br />Und hier entsteht gerade etwas Neues.</h1>
+      <p>
+        Diese Seite wird gerade neu aufgebaut. Im Hintergrund entsteht ein
+        <span class="accent">AI-Spielgrund für Jens Kapitza</span> — ein Ort für Ideen,
+        Projekte, Experimente und digitales Zeug, das noch ein bisschen Zukunft atmet.
+      </p>
+      <p>
+        Aktuell ist das hier bewusst eine kleine Platzhalterseite. Bald folgen Design,
+        Inhalte, Projekte und wahrscheinlich auch ein paar angenehm nerdige Überraschungen.
+      </p>
+
+      <section class="grid">
+        <div class="box">
+          <strong>Status</strong>
+          Die neue Website ist im Aufbau. Struktur, Inhalt und Look werden gerade vorbereitet.
+        </div>
+        <div class="box">
+          <strong>Was hier entsteht</strong>
+          Eine moderne Homepage für Jens Kapitza — mit Raum für Persönlichkeit, Projekte,
+          Technik, KI und Spielwiese.
+        </div>
+        <div class="box">
+          <strong>Technischer Hinweis</strong>
+          Falls du das hier siehst: Deployment-Ziel erkannt. Die Baustelle lebt. <code>back2heaven.de</code> antwortet.
+        </div>
+      </section>
+
+      <footer>
+        Mehr kommt gleich. Diese Seite ist nur der erste sichtbare Marker im Gelände.
+      </footer>
+    </main>
+  </body>
+</html>
